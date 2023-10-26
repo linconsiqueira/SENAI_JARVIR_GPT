@@ -1,0 +1,6 @@
+curl --location --request POST "https://brazilsouth.tts.speech.microsoft.com/cognitiveservices/v1" 
+--header "Ocp-Apim-Subscription-Key: 75589c58173f4809844ee2d75efde7e0"
+--header "Content-Type: application/ssml+xml" 
+--header "X-Microsoft-OutputFormat: audio-16khz-128kbitrate-mono-mp3" 
+--header "User-Agent: curl" 
+--data-raw "<speak version='1.0' xml:lang='pt-BR'><voice xml:lang='pt-BR' xml:gender='Male' name='pt-BR-JulioNeural'>Eu sou o Jarvis, como posso ajudar?</voice></speak>" --output output.mp3
